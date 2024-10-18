@@ -94,6 +94,10 @@ python manage.py migrate
 
 اگر از **reverse proxy** و **HTTPS** استفاده می‌کنید، برای رفع موارد احتمالی حتماً تنظیمات زیر را انجام دهید: [تنظیمات Reverse Proxy](https://stackoverflow.com/questions/62047354/build-absolute-uri-with-https-behind-reverse-proxy/65934202#65934202)
 
+--------
+
+
+
 
 
 
