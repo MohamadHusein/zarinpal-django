@@ -1,4 +1,4 @@
-# راهنمای پروژه پرداخت زرین پال با جنگو
+# راهنمای پیاده سازی درگاه پرداخت زرین پال با جنگو
 
 این پروژه نحوه‌ی پیاده‌سازی درگاه پرداخت **زرین پال** در جنگو را با استفاده از کتابخانه‌ی `az-iranian-bank-gateways` نشان می‌دهد.
 
@@ -46,7 +46,7 @@ from payments.views import go_to_gateway_view, callback_gateway_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("bankgateways/", az_bank_gateways_urls()),
-    path("go-to-geteway/", go_to_gateway_view),
+    path("go-to-gateway/", go_to_gateway_view),
     path("call-back-gateway/", callback_gateway_view),
 ]
 ```
@@ -112,7 +112,7 @@ from azbankgateways.exceptions import AZBankGatewaysException
 
 def go_to_gateway_view(request):
     amount = 11000  # حداقل مبلغ 11000 تومان
-    user_mobile_number = "+989123456789"  # اختیاری
+    user_mobile_number = "09123456789"  # اختیاری/حتما باید با 0 شروع شود
 
     factory = bankfactories.BankFactory()
     try:
