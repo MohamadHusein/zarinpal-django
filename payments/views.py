@@ -14,7 +14,7 @@ def go_to_gateway_view(request):
     # خواندن مبلغ از هر جایی که مد نظر است
     amount = 11000 #حداقل مبلق از 11000 به بالا است
     # تنظیم شماره موبایل کاربر از هر جایی که مد نظر است
-    user_mobile_number = "+989123456789"  # اختیاری
+    user_mobile_number = "09123456789"  # اختیاری/حتما باید با 0 شروع شود
 
     factory = bankfactories.BankFactory()
     try:
